@@ -1,0 +1,76 @@
+h1 {
+    color: rgb(65, 63, 230);
+    text-align: center;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 70px;
+    background: rgb(184, 213, 247);
+    border: 30px;
+    border-radius: 10px;
+    font-family: Hubballi, cursive;
+  }
+  .search {
+    color: rgb(104, 106, 109);
+    border: 50px;
+    padding: 15px;
+    border-radius: 50px;
+    max-width: 300px;
+    background: rgb(151, 184, 233);
+    float: right;
+  }
+  .word {
+    color: rgb(104, 106, 109);
+  }
+  .heademoji {
+    font-size: 200px;
+    color: rgb(77, 143, 241);
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  .present {
+    display: inline;
+    font-size: 20px;
+    margin-left: 0;
+  }
+  .headtemp {
+    font-size: 50px;
+    color: rgb(65, 63, 230);
+  }
+  .col-5 {
+    float: right;
+    width: 20%;
+    font-size: 20px;
+    display: inline;
+  }
+  .row {
+    padding: 50px 70px;
+    background: rgb(228, 241, 255);
+    border: 30px;
+    border-radius: 10px;
+    max-width: 600%;
+  }
+  .middle {
+    text-align: center;
+  }
+  p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .quote {
+    color: rgb(65, 73, 85);
+    border: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    max-width: 500px;
+    background: rgb(152, 193, 255);
+    margin: 0 auto;
+    display: block;
+  }
+  .big {
+    text-align: center;
+  }
+  

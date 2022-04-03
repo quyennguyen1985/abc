@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather Forecaster</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="weatherstyle.css" />
+  </head>
+  <body>
+    <h1>
+      WEATHER FORECASTER
+    </h1>
+    <div class="container">
+      <div class="time">
+        5:00 PM
+        <br />
+        Feb 26
+      </div>
+      <div class="big">
+        <form class="search-form" id="searchForm">
+          <input
+            class="search"
+            id="afterCity"
+            type="text"
+            placeholder="Looking for another city.."
+          />
+        </form>
+        <div class="present">
+          <span class="heademoji"> 🌧 </span>
+          <br />
+          <span class="word"> It is currently </span>
+          <br />
+          <span class="headtemp" id="headTemp"> <strong> 24℃ </strong> </span>
+        </div>
+        <div class="weatherToday" id="weather-today">Clear</div>
+      </div>
+      <div class="middle">
+        <div class="col-6">Humidity  <span id=humidity>10</span>%</div>
+        <div class="w-100"></div>
+        <div class="col-6">Wind speed  <span id="wind-speed">20</span>m/s</div>
+      <p>
+        <strong id="prevCity">
+          HO CHI MINH CITY
+        </strong>
+      </p>
+      <br />
+      <div class="row">
+        <div class="col-5">Mar 2</div>
+        <div class="col-5">Mar 1</div>
+        <div class="col-5">Feb 28</div>
+        <div class="col-5">Feb 27</div>
+        <div class="col-5">Tomorrow</div>
+        <br />
+        <hr />
+        <div class="col-5">⛈</div>
+        <div class="col-5">🌦</div>
+        <div class="col-5">🌥</div>
+        <div class="col-5">🌩</div>
+        <div class="col-5">🌤</div>
+        <br />
+        <div class="col-5">
+          35℃ <br />
+          24℃
+        </div>
+        <div class="col-5">
+          30℃ <br />
+          20℃
+        </div>
+        <div class="col-5">
+          35℃ <br />
+          25℃
+        </div>
+        <div class="col-5">
+          32℃ <br />
+          24℃
+        </div>
+        <div class="col-5">
+          35℃ <br />
+          25℃
+        </div>
+        <br />
+        <br />
+      </div>
+      <p class="quote">
+        <em>
+          Heading outside? Umbrellas and raincoats are recommended!
+        </em>
+        <br />
+        <a href="https://github.com/quyennguyen1985/github-hosting.git">Open-sourced code</a>, by Quyen Nguyen
+      </p>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>
