@@ -38,6 +38,8 @@ function displayWeather(response) {
   let iconEle = document.querySelector("#icon");
   let icon = response.dât.icon;
   iconEle.setAttribute ("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
+  iconEle.setAttribute("alt", response.data.weather[0].description);
+
 }
   function displayFtemp(event) {
     event.preventDefault();
