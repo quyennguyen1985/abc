@@ -28,8 +28,9 @@ h1 {
     color: rgb(77, 143, 241);
     background: rgb(255, 255, 255);
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    margin-right: 5px;
+    height: 64px;
+    width: 64px;
   }
   .present {
     display: inline;
