@@ -73,4 +73,17 @@ h1 {
   .big {
     text-align: center;
   }
-  
+  .degree {
+  position: relative;
+  top: -14px;
+  font-size: 18px;
+}
+#cdegree {
+  text-decoration: none;
+}
+#fdegree {
+  text-decoration: none;
+}
+.degree.active:hover {
+  cursor: pointer;
+}
