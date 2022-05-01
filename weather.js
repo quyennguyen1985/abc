@@ -39,7 +39,21 @@ function displayWeather(response) {
   let icon = response.dât.icon;
   iconEle.setAttribute ("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
 }
-
+  function displayFtemp(event) {
+    event.preventDefault();
+    cLink.classList.remove("active");
+    fLink.classList.add("active");
+    let fTempElement = document.querySelector("#headTemp");
+    let fahrenheitTemp = (fTempElement.innerHTML * 9) / 5 + 32;
+    fTempElement.innerHTML = Math.round(fahrenheitTemp);
+  }
+  function displayCtemp(event) {
+    event.preventDefault();
+    cLink.classList.add("active");
+    fLink.classList.remove("active");
+    let cTempElement = document.querySelector("#headtemp");
+    cTempElement.innerHTML = celciusTemp;
+  }
 function searchCity(event) {
   event.preventDefault();
   let apiKey = "d7155e05c6be5bad99f376b3098391fb";
