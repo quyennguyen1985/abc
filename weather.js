@@ -36,7 +36,7 @@ function displayWeather(response) {
     response.data.wind.speed
   );
   let iconEle = document.querySelector("#icon");
-  let icon = response.data.icon;
+  let icon = response.data.weather[0].icon;
   iconEle.setAttribute ("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
   iconEle.setAttribute("alt", response.data.weather[0].description);
 
