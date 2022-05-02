@@ -43,16 +43,13 @@ function displayWeather(response) {
 }
   function displayFtemp(event) {
     event.preventDefault();
-    cLink.classList.remove("active");
-    fLink.classList.add("active");
     let fTempElement = document.querySelector("#headTemp");
     let fahrenheitTemp = (fTempElement.innerHTML * 9) / 5 + 32;
     fTempElement.innerHTML = Math.round(fahrenheitTemp);
   }
   function displayCtemp(event) {
     event.preventDefault();
-    fLink.classList.remove("active");
-    let cTempElement = document.querySelector("#headtemp");
+    let cTempElement = document.querySelector("#headTemp");
     cTempElement.innerHTML = celciusTemp;
   }
 function searchCity(city) {
