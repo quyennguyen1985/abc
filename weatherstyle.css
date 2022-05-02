@@ -83,6 +83,3 @@ h1 {
 #fdegree {
   text-decoration: none;
 }
-.degree.active:hover {
-  cursor: pointer;
-}
