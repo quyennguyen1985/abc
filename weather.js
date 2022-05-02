@@ -51,7 +51,6 @@ function displayWeather(response) {
   }
   function displayCtemp(event) {
     event.preventDefault();
-    cLink.classList.add("active");
     fLink.classList.remove("active");
     let cTempElement = document.querySelector("#headtemp");
     cTempElement.innerHTML = celciusTemp;
@@ -67,7 +66,7 @@ function searchCity(city) {
 function search(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#afterCity");
-  search(searchInput.value);
+  searchCity(searchInput.value);
 }
 
 let searchForm = document.querySelector("#searchForm");
