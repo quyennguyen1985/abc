@@ -75,3 +75,4 @@ let fLink = document.querySelector("#fdegree");
 fLink.addEventListener = ("click", displayFtemp);
 let cLink = document.querySelector("#cdegree");
 cLink.addEventListener = ("click", displayCtemp);
+searchCity("Ho Chi Minh City");
