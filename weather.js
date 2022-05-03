@@ -67,7 +67,7 @@ function search(event) {
 }
 
 let searchForm = document.querySelector("#searchForm");
-searchForm.addEventListener("submit", searchCity);
+searchForm.addEventListener("submit", search);
 let celciusTemp = null;
 let fLink = document.querySelector("#fdegree");
 fLink.addEventListener = ("click", displayFtemp);
