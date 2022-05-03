@@ -69,7 +69,6 @@ function search(event) {
 let searchForm = document.querySelector("#searchForm");
 searchForm.addEventListener("submit", searchCity);
 let celciusTemp = null;
-search ("Ho Chi Minh city");
 let fLink = document.querySelector("#fdegree");
 fLink.addEventListener = ("click", displayFtemp);
 let cLink = document.querySelector("#cdegree");
