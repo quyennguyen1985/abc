@@ -35,6 +35,7 @@ function displayWeather(response) {
   document.querySelector("#wind-speed").innerHTML = Math.round(
     response.data.wind.speed
   );
+  celsiusTemp = response.data.main.temp;
   let iconEle = document.querySelector("#icon");
   let icon = response.data.weather[0].icon;
   iconEle.setAttribute ("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
@@ -44,13 +45,13 @@ function displayWeather(response) {
   function displayFtemp(event) {
     event.preventDefault();
     let fTempElement = document.querySelector("#headTemp");
-    let fahrenheitTemp = (fTempElement.innerHTML * 9) / 5 + 32;
-    fTempElement.innerHTML = Math.round(fahrenheitTemp);
+    let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+    fTempElement.innerHTML = `${Math.round(fahrenheitTemp)}°F`;
   }
   function displayCtemp(event) {
     event.preventDefault();
     let cTempElement = document.querySelector("#headTemp");
-    cTempElement.innerHTML = celciusTemp;
+    cTempElement.innerHTML = celsiusTemp;
   }
 function searchCity(city) {
   let apiKey = "d7155e05c6be5bad99f376b3098391fb";
@@ -68,9 +69,9 @@ function search(event) {
 
 let searchForm = document.querySelector("#searchForm");
 searchForm.addEventListener("submit", search);
-let celciusTemp = null;
+let celsiusTemp = null;
 let fLink = document.querySelector("#fdegree");
-fLink.addEventListener = ("click", displayFtemp);
+fLink.addEventListener("click", displayFtemp);
 let cLink = document.querySelector("#cdegree");
-cLink.addEventListener = ("click", displayCtemp);
+cLink.addEventListener("click", displayCtemp);
 searchCity("Ho Chi Minh City");
