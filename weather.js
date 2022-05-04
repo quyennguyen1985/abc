@@ -51,7 +51,7 @@ function displayWeather(response) {
   function displayCtemp(event) {
     event.preventDefault();
     let cTempElement = document.querySelector("#headTemp");
-    cTempElement.innerHTML = celsiusTemp;
+    cTempElement.innerHTML = `${Math.round(celsiusTemp)}°C`;
   }
 function searchCity(city) {
   let apiKey = "d7155e05c6be5bad99f376b3098391fb";
