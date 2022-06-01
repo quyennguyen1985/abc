@@ -1,85 +1,124 @@
-h1 {
-    color: rgb(65, 63, 230);
-    text-align: center;
-  }
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px 70px;
-    background: rgb(184, 213, 247);
-    border: 30px;
-    border-radius: 10px;
-    font-family: Hubballi, cursive;
-  }
-  .search {
-    color: rgb(104, 106, 109);
-    border: 50px;
-    padding: 15px;
-    border-radius: 50px;
-    max-width: 300px;
-    background: rgb(151, 184, 233);
-    float: right;
-  }
-  .word {
-    color: rgb(104, 106, 109);
-  }
-  .heademoji {
-    font-size: 200px;
-    color: rgb(77, 143, 241);
-    background: rgb(255, 255, 255);
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-  }
-  .present {
-    display: inline;
-    font-size: 20px;
-    margin-left: 0;
-  }
-  .headtemp {
-    font-size: 50px;
-  }
-  .col-5 {
-    float: right;
-    width: 20%;
-    font-size: 20px;
-    display: inline;
-  }
-  .row {
-    padding: 50px 70px;
-    background: rgb(228, 241, 255);
-    border: 30px;
-    border-radius: 10px;
-    max-width: 600%;
-  }
-  .middle {
-    text-align: center;
-  }
-  p {
-    font-size: 20px;
-    text-align: center;
-  }
-  .quote {
-    color: rgb(65, 73, 85);
-    border: 50px;
-    padding: 10px;
-    border-radius: 50px;
-    max-width: 500px;
-    background: rgb(152, 193, 255);
-    margin: 0 auto;
-    display: block;
-  }
-  .big {
-    text-align: center;
-  }
-  .degree {
+.container {
+  background-image: linear-gradient(rgb(110, 110, 238), rgb(230, 202, 46));
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 70px;
+  border: 30px;
+  border-radius: 10px;
+  font-family: Hubballi, cursive;
+}
+.search {
+  border: 50px;
+  padding: 15px;
+  border-radius: 50px;
+  max-width: 300px;
+  background: rgba(157, 181, 216, 0.637);
+  float: right;
+  display: block;
+}
+.word {
+  color: rgb(180, 201, 233);
+  font-size: 25px;
+}
+.heademoji {
+  font-size: 200px;
+  color: rgb(77, 143, 241);
+  background-image: linear-gradient(rgb(160, 160, 247), rgb(223, 240, 149));
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: inline;
+  position: relative;
+  left: 90px;
+}
+.present {
+  display: block;
+  font-size: 20px;
+  margin-left: 0;
+}
+.headtemp {
+  font-size: 80px;
+  color: rgb(45, 63, 97);
+}
+.forecast {
+  padding: 80px 70px;
+  background: rgba(228, 241, 255, 0.233);
+  border: 30px;
+  border-radius: 10px;
+  max-width: 1000%;
+  text-align: center;
+}
+.host {
+  display: block;
+}
+.middle {
+  text-align: center;
+  font-size: 20px;
+}
+.weatherToday {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+p {
+  font-size: 20px;
+  text-align: center;
+}
+.weatherToday {
+  font-size: 20px;
+}
+.prevCity {
+  font-size: 35px;
+  color: rgb(213, 212, 252);
+  font-family: "Gruppo", cursive;
+}
+
+.big {
+  text-align: center;
+}
+.degree {
   position: relative;
   top: -14px;
   font-size: 18px;
+  color: bisque;
 }
 #cdegree {
   text-decoration: none;
+  color: rgb(240, 250, 151);
 }
 #fdegree {
   text-decoration: none;
+  color: rgb(247, 255, 131);
+}
+#fdegree:hover {
+  color: rgb(255, 194, 62);
+  cursor: pointer;
+}
+#cdegree:hover {
+  color: rgb(255, 194, 62);
+  cursor: pointer;
+}
+.max {
+  font-weight: bold;
+  font-size: 25px;
+}
+.min {
+  font-size: 18px;
+  opacity: 50%;
+}
+.weather-forecast-icon {
+  max-width: 70px;
+  position: relative;
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 20px;
+  position: relative;
+}
+.col-2 {
+  text-align: center;
+  max-width: 500px;
+  position: relative;
+}
+.row {
+  text-align: center;
 }
